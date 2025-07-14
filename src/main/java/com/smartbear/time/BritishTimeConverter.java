@@ -4,6 +4,14 @@ import com.smartbear.time.util.Constants;
 import com.smartbear.time.util.NumberToWordConverter;
 
 public class BritishTimeConverter implements ITimeConverter{
+	
+	
+	/***
+	 * We take (hour + 1) % 24:
+	 * 	To correctly roll over from 23 to 0 (for midnight)
+	 * 	To keep the hour in valid 24-hour range
+	 * 	So that spoken form like "quarter to twelve" works at 23:45
+	 */
 
     public String toSpokenTime(String time) {
         String[] parts = time.split(":");
