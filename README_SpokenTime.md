@@ -14,6 +14,7 @@ This project converts a given 24-hour format time (e.g., `06:25`) into its **Bri
 - Uses Java 17 `switch` expression for clarity
 - Follows clean architecture:
   - Interface-driven (`ITimeConverter`)
+  - uses Strategy design pattern for supporting multiple countries
   - Constants separated
   - Testable design
 - Includes unit tests using **JUnit 5**
@@ -29,8 +30,9 @@ SpokenTime/
 │   ├── main/
 │   │   └── java/com/smartbear
 			└──/time/
-				├── ITimeConverter.java             	# Interface
-│   │       		├── BritishTimeConverter.java       	# Logic implementation
+				├── ITimeConverterStrategy.java             	# Interface
+│   │       		├── BritishTimeConverterStrategy.java       	# Logic implementation
+				├──	SpokenTimeConversionContext.java			# dynamically chooses a time-conversion strategy based on the provided country 																  code
 				└──/app/
 					├── BritishSpokenTimeApp.java      # CLI runner
 │   │             └──/util/   
@@ -38,8 +40,8 @@ SpokenTime/
 					├── NumberToWordConverter.java     # utility class	
 │   └── test/
 │       └── java/com/example/time/
-│           └── BritishTimeConverterTest.java         # Unit tests
-├── pom.xml                                    # Maven configuration
+│           └── BritishTimeConverterStrategyTest.java         # Unit tests
+├── pom.xml                                                   # Maven configuration
 ```
 
 ---
@@ -71,7 +73,9 @@ mvn exec:java -Dexec.mainClass="com.smartbear.time.app.BritishSpokenTimeApp"
 When prompted, enter a time in `HH:mm` format (24-hour), e.g.:
 
 ```text
-Enter time in 24-hour format (HH:mm): 06:25
+Please Enter one Country Code from this (UK) : UK
+Enter the spoken time format from this (24H) : 24H
+Enter time in 24-hour format (HH:mm) e.g: (23:59) : 06:25
 British Spoken Time: twenty five past six
 ```
 
@@ -84,7 +88,7 @@ mvn test
 ```
 
 Test class used:  
-➡️ `BritishTimeConverterTest.java`
+➡️ `BritishTimeConverterStrategyTest.java`
 
 Framework:  
 ➡️ JUnit 5

@@ -18,4 +18,13 @@ public class NumberToWordConverter {
         return tens[tenPart] + (onePart > 0 ? " " + ones[onePart] : "");
     }
 
+	
+	public static void main(String[] args) {
+		
+		
+		System.out.println(numberToWords(65));
+		
+		
+	}
+	
 }

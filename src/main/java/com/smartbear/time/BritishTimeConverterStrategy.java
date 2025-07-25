@@ -2,8 +2,9 @@ package com.smartbear.time;
 
 import com.smartbear.time.util.Constants;
 import com.smartbear.time.util.NumberToWordConverter;
+import com.smartbear.time.util.TimeValidator;
 
-public class BritishTimeConverter implements ITimeConverter{
+public class BritishTimeConverterStrategy implements ITimeConverterStrategy{
 	
 	
 	/***
@@ -13,7 +14,8 @@ public class BritishTimeConverter implements ITimeConverter{
 	 * 	So that spoken form like "quarter to twelve" works at 23:45
 	 */
 
-    public String toSpokenTime(String time) {
+    public String toSpokenTime24HourFormat(String time) {
+    	
         String[] parts = time.split(":");
         int hour = Integer.parseInt(parts[0]);
         int minute = Integer.parseInt(parts[1]);

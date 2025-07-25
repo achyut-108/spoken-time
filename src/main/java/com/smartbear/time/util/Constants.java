@@ -19,4 +19,22 @@ public class Constants {
     public static final String QUATER_PAST = "quarter past";
     public static final String HALF_PAST = "half past";
     public static final String QUATER_TO = "quarter to";
+    
+    public static class Country {
+        public static final String INDIA = "IN";
+        public static final String USA = "US";
+        public static final String UK = "UK";
+    }
+    
+    public static class SpokenTimeFormat {
+        public static final String TWENTY_FOUR_HOUR = "24H";
+        public static final String TWELVE_HOUR = "12H";
+    }
+    
+    
+    public static class ErrorMessages {
+        public static final String INVALID_SPOKEN_TIME = "Invalid Spoken Time";
+        public static final String INVALID_INPUT = "Invalid Input";
+    }
+    
 }
