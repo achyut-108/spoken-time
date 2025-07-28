@@ -1,10 +1,10 @@
-# 🕰️ British Spoken Time Converter
+# British Spoken Time Converter
 
 This project converts a given 24-hour format time (e.g., `06:25`) into its **British spoken form** (e.g., `"twenty five past six"`).
 
 ---
 
-## ✅ Features
+## Features
 
 - Handles spoken time expressions like:
   - `00:00` → `midnight`
@@ -22,7 +22,7 @@ This project converts a given 24-hour format time (e.g., `06:25`) into its **Bri
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 SpokenTime/
@@ -46,7 +46,7 @@ SpokenTime/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -55,7 +55,7 @@ SpokenTime/
 
 ---
 
-### 🔧 Build & Run the App
+### Build & Run the App
 
 ``` IDE
 ### If you are using any IDE such as Eclipse or Intellij : just import the project as maven project after checkout and use the IDE 
@@ -81,7 +81,7 @@ British Spoken Time: twenty five past six
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 ```bash
 mvn test
@@ -95,7 +95,7 @@ Framework:
 
 ---
 
-## 📈 Code Coverage with JaCoCo
+## Code Coverage with JaCoCo
 
 JaCoCo is already integrated in `pom.xml`. To generate the report:
 
@@ -105,7 +105,7 @@ mvn clean verify
 
 This runs all tests and generates a coverage report.
 
-### 📁 View the Report
+### View the Report
 
 Open this file in your browser:
 
@@ -117,7 +117,7 @@ You’ll see method/line/class coverage for the whole codebase.
 
 ---
 
-## 🧾 Example Inputs and Outputs
+## Example Inputs and Outputs
 
 | Input Time | Spoken Output           |
 |------------|--------------------------|
@@ -130,7 +130,7 @@ You’ll see method/line/class coverage for the whole codebase.
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Java 17
 - Maven
@@ -139,7 +139,7 @@ You’ll see method/line/class coverage for the whole codebase.
 
 ---
 
-## 📦 Future Enhancements
+## Future Enhancements
 
 - Add support for AM/PM + 12-hour format
 - Add multilingual support (Hindi, French, etc.)
@@ -147,7 +147,7 @@ You’ll see method/line/class coverage for the whole codebase.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Siddhartha Kumar**
 
@@ -155,6 +155,6 @@ You’ll see method/line/class coverage for the whole codebase.
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
