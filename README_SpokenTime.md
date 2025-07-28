@@ -156,6 +156,4 @@ You’ll see method/line/class coverage for the whole codebase.
 
 ---
 
-## License
 
-This project is licensed under the MIT License.
