@@ -88,10 +88,11 @@ mvn test
 ```
 
 Test class used:  
-➡️ `BritishTimeConverterStrategyTest.java`
+️`BritishTimeConverterStrategyTest.java`
+`SpokenTimeConversionContextTest.java`
 
 Framework:  
-➡️ JUnit 5
+️ JUnit 5
 
 ---
 
